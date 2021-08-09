@@ -24,6 +24,16 @@ function newYear() {
 setInterval(function() {
     newYear();
 }, 1000);
+
+/*===== TẠO HÀM ALERT=========*/
+function sweetAlert(title) {
+    const template = ` <div class="sweet-alert">
+<i class="fa fa-check sweet-icon"></i>
+<p class="sweet-text">${title}</p>
+</div>`;
+
+    document.body.insertAdjacentHTML("beforeend", template);
+}
 /*======== Form Email =========*/
 
 const subscriceform = document.querySelector(".subscrice-form");
